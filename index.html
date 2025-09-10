@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Modern Login | Personal Project</title>
+</head>
+<body>
+    <main class="form-container">
+        <section class="form-login is-active" id="login">
+            <h2 id="welcome">
+                Welcome Back!
+            </h2>
+            <img id="logo-image" src="svg/verified.svg">
+            <p id="logo-title">Please enter your credentials for get restore your account</p>
+            <form id="login" action="_submit" method="get">
+                <div class="input-container">
+                    <input type="text" name="username" placeholder="User" required>
+                    <span icon="icons"><img src="svg/person.svg" alt="User Icon" srcset=""></span>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <span icon="icons"><img src="svg/password.svg" alt="Lock Icon" srcset=""></span>
+                </div>
+
+                <div class="verification-container">
+                    <button type="submit">Login<img style="width: 18px; height:18; top: 500px;" src="svg/login.svg"></button>
+                    <button type="button" id="toggle-button">Register</button>
+                </div>
+                
+                <div class="verification-link">
+                    <a href="#">Forgot Password?</a>
+                </div>  
+            </form>
+        </section>
+
+        <section class="form-registrer is-hidden" id="register">
+            <h2 id="welcome">
+                Hello, Friend!
+            </h2>
+            <img id="logo-image" src="svg/person_add.svg">
+            <p id="logo-title">Enter your personal details and start journey with us</p>
+            <form id="registrer" action="_sumbit" method="get">
+
+                <div class="input-container">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <span icon="icons"><img src="svg/person.svg" alt="User Icon" srcset=""></span>
+                </div>
+
+
+                <div class="input-container">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <span icon="icons"><img src="svg/mail.svg" alt="Email Icon" srcset=""></span>
+                </div>
+
+
+                <div class="input-container">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <span icon="icons"><img src="svg/lock.svg" alt="Lock Icon" srcset=""></span>
+                </div>
+
+                <div class="verification-container">
+                    <button type="submit">Register</button>
+                    <button type="button" id="toggle-button2">LogIn<img style="width: 18px; height:18; top: 500px;" src="svg/login.svg"></button>
+                </div>
+            </form>
+        </section>
+    <script src="script.js"></script>
+    </main>
+</body>
+</html>
